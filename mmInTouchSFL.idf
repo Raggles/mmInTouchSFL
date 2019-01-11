@@ -1,0 +1,7 @@
+;
+; mmInTouchSFL.idf
+;
+Version=1
+
+ReadWindowLocation, , ,1,0x02000028,PasteBuiltInFuncs,HCUTILS,HCUTILS,ReadWindowLocation,C,INT,STRING,STRING,STRING,STRING
+ 
