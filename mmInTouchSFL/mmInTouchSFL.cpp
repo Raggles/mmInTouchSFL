@@ -1,13 +1,10 @@
-// HCInTouchUtils.cpp : Defines the exported functions for the DLL application.
-//
-
 #include "stdafx.h"
 #include "mmInTouchSFL.h"
 #include <stdio.h>
 #include "PTACC.H"
 
 
-HCINTOUCHUTILS_API int ReadWindowLocation(LPSTR AppDir, LPSTR WindowName, LPSTR XTag, LPSTR YTag)
+MMUTILS_API int ReadWindowLocation(LPSTR AppDir, LPSTR WindowName, LPSTR XTag, LPSTR YTag)
 {
 	char filename[1024] = "";
 	char line[1024];
@@ -121,7 +118,7 @@ HCINTOUCHUTILS_API int ReadWindowLocation(LPSTR AppDir, LPSTR WindowName, LPSTR 
 	return 0;
 }
 
-HCINTOUCHUTILS_API int PasteBuiltInFuncs(LPSTR funcName, LPSTR result)
+MMUTILS_API int PasteBuiltInFuncs(LPSTR funcName, LPSTR result)
 {
 	strcpy_s(result, 100, funcName);
 	strcat_s(result, 100, " (InfoInTouchAppDir(), \"WindowName\", XTag.Name, YTag.Name);");		
